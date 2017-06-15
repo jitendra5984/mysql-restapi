@@ -1,0 +1,33 @@
+{
+  "name": "mysql-restapi",
+  "version": "1.0.0",
+  "description": "Module for gateway between MySql DB & RestAPI.",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.12.4",
+    "multer": "^0.1.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jitendra5984/mysql-restapi.git"
+  },
+  "keywords": [
+    "sql",
+    "mysql",
+    "rest",
+    "api",
+    "restapi",
+    "express"
+  ],
+  "author": "Jitendra",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jitendra5984/mysql-restapi/issues"
+  },
+  "homepage": "https://github.com/jitendra5984/mysql-restapi#readme"
+}
