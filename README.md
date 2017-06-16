@@ -1,14 +1,14 @@
-# mysql-to-rest
+# mysql-restapi
 
-mysql-to-rest is a module to map a MySQL-DB to an REST API. 
+Module for gateway between MySql DB & RestAPI.
 
-The foundation for this module is the express framework, as well as the mysql package for the DB connection.
+Express framework & mysql package required for database connection.
 
 ## API
 
 ### Installation
 
-`$ npm install mysql-to-rest`
+`$ npm install mysql-restapi`
 
 First load express and mysql
 
