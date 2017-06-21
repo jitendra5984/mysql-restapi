@@ -1,6 +1,6 @@
 {
   "name": "mysql-restapi",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Module for gateway between MySql DB & RestAPI.",
   "main": "index.js",
   "dependencies": {

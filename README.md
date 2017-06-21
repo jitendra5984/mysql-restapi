@@ -6,6 +6,13 @@ Express framework & mysql package required for database connection.
 
 ## API
 
+### Before Installation
+Make sure you have setup express project
+Go [here](https://expressjs.com/) to find out more 
+
+Make sure mysql module is instsalled before installing mysql-restapi, or install it
+`$ npm install mysql --save`
+
 ### Installation
 
 `$ npm install mysql-restapi`
@@ -15,7 +22,7 @@ First load express and mysql
 ```js
 var express = require('express');
 var mysql = require('mysql');
-var mysqltorest  = require('mysql-to-rest');
+var mysqlrestapi  = require('mysql-restapi');
 var app = express();
 ```
 

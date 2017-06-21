@@ -14,7 +14,7 @@ module.exports = function(app,connection,options) {
     options.uploadDestination = options.uploadDestination || __dirname + '/uploads/';   //Where to save the uploaded files
     options.allowOrigin = options.allowOrigin || '*';                                   //Sets the Access-Control-Allow-Origin header
     options.maxFileSize = options.maxFileSize || -1;                                    //Max filesize for uploads in bytes
-    options.apiURL = options.apiURL || '/api';                                          //Url Prefix for API
+    options.apiURL = options.apiURL || 'api';                                          //Url Prefix for API
     options.paramPrefix = options.paramPrefix || '_';                                   //Prefix for special params (eg. order or fields).
 
     app.use(bodyParser.urlencoded({ extended: false }) );
@@ -47,18 +47,23 @@ module.exports = function(app,connection,options) {
         next();
     };
 
-    var api = require('./controllers/api.js')(connection,{
+    var api = require('./lib/api.js')(connection,{
         maxFileSize:options.maxFileSize,
         paramPrefix:options.paramPrefix
     });
 
     //Set actual routes
-    app.get(options.apiURL + '/:table', ensureAuthenticated, api.findAll);
-    app.get(options.apiURL + '/:table/:id', ensureAuthenticated, api.findById);
-    app.post(options.apiURL + '/:table', ensureAuthenticated, api.addElement);
-    app.put(options.apiURL + '/:table/:id', ensureAuthenticated, api.updateElement);
-    app.delete(options.apiURL + '/:table/:id', ensureAuthenticated, api.deleteElement);
+    app.get('/' + options.apiURL + '/:table', ensureAuthenticated, api.findAll);
+    app.get('/' + options.apiURL + '/:table/:id', ensureAuthenticated, api.findById);
+    app.post('/' + options.apiURL + '/:table', ensureAuthenticated, api.addElement);
+    app.put('/' + options.apiURL + '/:table/:id', ensureAuthenticated, api.updateElement);
+    app.delete('/' + options.apiURL + '/:table/:id', ensureAuthenticated, api.deleteElement);
 
+
+    var customAPI = require('./lib/custom.js')(connection);
+
+    app.get('/custom' + options.apiURL + '/:query', ensureAuthenticated, customAPI.runQuery);
+    app.post('/custom' + options.apiURL, ensureAuthenticated, customAPI.runPostQuery);
 
     //Export API
     return {
