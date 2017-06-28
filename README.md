@@ -75,44 +75,12 @@ DELETE        | YOUR_DOMAIN/api/crud/:tablename/:rowID | Delete record via Row I
 
 
 
-Request Type  | Request URL                            | Purpose                      | Parameters 
-------------- | -------------                          | -----------                  | ---------- 
-GET           | YOUR_DOMAIN/api/crud/:tablename        | Fetch full table             | - 
-GET           | YOUR_DOMAIN/api/crud/:tablename/:rowID | Fetch record via Row ID      | - 
-POST          | YOUR_DOMAIN/api/crud/:tablename        | Create/Enter record in table | - 
-PUT           | YOUR_DOMAIN/api/crud/:tablename/:rowID | Update record via ID         | - 
-DELETE        | YOUR_DOMAIN/api/crud/:tablename/:rowID | Delete record via Row ID     | - 
-
-
-##### GET request for full table
-`YOUR_DOMAIN/api/crud/:tablename`
-
-##### GET request for fetching record via ID
-`YOUR_DOMAIN/api/crud/:tablename/:rowID`
-
-##### POST request for creating/entering record
-`YOUR_DOMAIN/api/crud/:tablename`
-
-Pass all parameters with fieldnames and values
-
-
-##### PUT request to upload record via ID
-`YOUR_DOMAIN/api/crud/:tablename/:rowID`
-
-Pass all updated parameters with fieldnames and values 
-
-
-##### DELETE request to remove/delete record via ID
-`YOUR_DOMAIN/api/crud/:tablename/:rowID`
-
-
-
 #### Custom query request APIs
 
 
-##### POST request for custom query
-`YOUR_DOMAIN/api/custom`
-
-Pass your sql query as "query" parameter in request
+Request Method | Request URL  | Purpose  | Parameters
+-------------  | -------------  | -------------  | -------------
+GET            | YOUR_DOMAIN/api/custom/:query        | Run custom query & get result             | - 
+POST           | YOUR_DOMAIN/api/custom | Run custom query & get result     | {"query":"SQL_QUERY"} 
 
 
