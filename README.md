@@ -65,7 +65,7 @@ After completing setup given above follow these options to run APIs:
 #### CRUD (GET, POST/CREATE, PUT/UPDATE, DELETE) request APIs
 
 
-First Header  | Second Header  | Second Header  | Second Header
+Request Type  | Request URL  | Purpose  | Parameters
 ------------- | -------------  | -------------  | -------------
 Content Cell  | Content Cell   | -              | - 
 Content Cell  | Content Cell   | -              | -
