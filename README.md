@@ -69,8 +69,8 @@ Request Type  | Request URL  | Purpose  | Parameters
 ------------- | -------------  | -------------  | -------------
 GET           | YOUR_DOMAIN/api/crud/:tablename        | Fetch full table             | - 
 GET           | YOUR_DOMAIN/api/crud/:tablename/:rowID | Fetch record via Row ID      | - 
-POST          | YOUR_DOMAIN/api/crud/:tablename        | Create/Enter record in table | - 
-PUT           | YOUR_DOMAIN/api/crud/:tablename/:rowID | Update record via ID         | - 
+POST          | YOUR_DOMAIN/api/crud/:tablename        | Create/Enter record in table | {"fieldname":"fieldvalue",---} 
+PUT           | YOUR_DOMAIN/api/crud/:tablename/:rowID | Update record via ID         | {"fieldname":"fieldvalue",---}  
 DELETE        | YOUR_DOMAIN/api/crud/:tablename/:rowID | Delete record via Row ID     | - 
 
 
