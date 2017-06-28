@@ -66,12 +66,12 @@ After completing setup given above follow these options to run APIs:
 
 
 Request Type  | Request URL       | Purpose      | Parameters
-------------- | -------------     | ----------- | ----------------
-GET  | YOUR_DOMAIN/api/crud/:tablename     | Fetch full table | -
-GET  | YOUR_DOMAIN/api/crud/:tablename/:rowID      | Fetch record via Row ID | -
-POST  | YOUR_DOMAIN/api/crud/:tablename | Create/Enter record in table | {"fieldname1":"fieldvalue1","fieldname2":"fieldvalue2","fieldname3":"fieldvalue3",...}
-PUT   | YOUR_DOMAIN/api/crud/:tablename/:rowID | Update record via ID | {"fieldname1":"fieldvalue1","fieldname2":"fieldvalue2","fieldname3":"fieldvalue3",...}
-DELETE | YOUR_DOMAIN/api/crud/:tablename/:rowID | Delete record via Row ID | -
+------------- | -------------     | -----------  | ----------
+GET           | YOUR_DOMAIN/api/crud/:tablename     | Fetch full table | -
+GET           | YOUR_DOMAIN/api/crud/:tablename/:rowID      | Fetch record via Row ID | -
+POST          | YOUR_DOMAIN/api/crud/:tablename | Create/Enter record in table | {"fieldname1":"fieldvalue1","fieldname2":"fieldvalue2","fieldname3":"fieldvalue3",...}
+PUT           | YOUR_DOMAIN/api/crud/:tablename/:rowID | Update record via ID | {"fieldname1":"fieldvalue1","fieldname2":"fieldvalue2","fieldname3":"fieldvalue3",...}
+DELETE        | YOUR_DOMAIN/api/crud/:tablename/:rowID | Delete record via Row ID | -
 
 
 ##### GET request for full table
