@@ -57,3 +57,30 @@ var corsOptions = {
 
 module.exports={connection, settingOptions, corsOptions};
 ```
+
+# How to use
+
+After completing setup given above follow these options to run APIs:
+
+## CRUD (GET, POST/CREATE, PUT/UPDATE, DELETE) request APIs
+
+
+Request Method | Request URL                            | Purpose                      | Parameters
+-------------  | -------------------------------------  | ---------------------------  | -------------
+GET            | YOUR_DOMAIN/api/crud/:tablename        | Fetch full table             | - 
+GET            | YOUR_DOMAIN/api/crud/:tablename/:rowID | Fetch record via Row ID      | - 
+POST           | YOUR_DOMAIN/api/crud/:tablename        | Create/Enter record in table | {"fieldname":"fieldvalue",---} 
+PUT            | YOUR_DOMAIN/api/crud/:tablename/:rowID | Update record via ID         | {"fieldname":"fieldvalue",---}  
+DELETE         | YOUR_DOMAIN/api/crud/:tablename/:rowID | Delete record via Row ID     | - 
+
+
+
+## Custom query request APIs
+
+
+Request Method | Request URL                     | Purpose                          | Parameters
+-------------  | ------------------------------  | -------------------------------  | -------------
+GET            | YOUR_DOMAIN/api/custom/:query   | Run custom query & get result    | - 
+POST           | YOUR_DOMAIN/api/custom          | Run custom query & get result    | {"query":"SQL_QUERY"} 
+
+
