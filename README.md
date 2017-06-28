@@ -67,8 +67,6 @@ After completing setup given above follow these options to run APIs:
 
 Request Type  | Request URL  | Purpose  | Parameters
 ------------- | -------------  | -------------  | -------------
-Content Cell  | Content Cell   | -              | - 
-Content Cell  | Content Cell   | -              | -
 GET           | YOUR_DOMAIN/api/crud/:tablename        | Fetch full table             | - 
 GET           | YOUR_DOMAIN/api/crud/:tablename/:rowID | Fetch record via Row ID      | - 
 POST          | YOUR_DOMAIN/api/crud/:tablename        | Create/Enter record in table | - 
