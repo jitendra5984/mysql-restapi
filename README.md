@@ -65,6 +65,13 @@ After completing setup given above follow these options to run APIs:
 #### CRUD (GET, POST/CREATE, PUT/UPDATE, DELETE) request APIs
 
 
+First Header  | Second Header  | Second Header  | Second Header
+------------- | -------------  | -------------  | -------------
+Content Cell  | Content Cell   | -              | - 
+Content Cell  | Content Cell   | -              | -
+
+
+
 Request Type  | Request URL                            | Purpose                      | Parameters 
 ------------- | -------------                          | -----------                  | ---------- 
 GET           | YOUR_DOMAIN/api/crud/:tablename        | Fetch full table             | - 
