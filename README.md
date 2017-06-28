@@ -40,7 +40,7 @@ var connection=mysql.createPool({
     database:'DATABASE'
 });
 
-var options = {
+var settingOptions = {
     apiURL:'api',
     paramPrefix:'_'
 };
@@ -55,5 +55,5 @@ var corsOptions = {
 };
 
 
-module.exports={connection, options, corsOptions};
+module.exports={connection, settingOptions, corsOptions};
 ```
