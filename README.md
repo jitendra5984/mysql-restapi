@@ -65,4 +65,18 @@ After completing setup given above follow these options to run APIs:
 #### CRUD (GET, POST/CREATE, PUT/UPDATE, DELETE) request APIs
 
 ##### GET request for full table
-/api/crud/:tablename
+`YOUR_DOMAIN/api/crud/:tablename`
+
+##### GET request for fetching record via ID
+`YOUR_DOMAIN/api/crud/:tablename/:rowID`
+
+##### POST request for creating/entering record
+`YOUR_DOMAIN/api/crud/:tablename`
+Pass all parameters with fieldnames and values
+
+##### PUT request to upload record via ID
+`YOUR_DOMAIN/api/crud/:tablename/:rowID`
+Pass all updated parameters with fieldnames and values 
+
+##### DELETE request to remove/delete record via ID
+`YOUR_DOMAIN/api/crud/:tablename/:rowID`
