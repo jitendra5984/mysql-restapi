@@ -72,11 +72,23 @@ After completing setup given above follow these options to run APIs:
 
 ##### POST request for creating/entering record
 `YOUR_DOMAIN/api/crud/:tablename`
+
 Pass all parameters with fieldnames and values
 
 ##### PUT request to upload record via ID
 `YOUR_DOMAIN/api/crud/:tablename/:rowID`
+
 Pass all updated parameters with fieldnames and values 
 
 ##### DELETE request to remove/delete record via ID
 `YOUR_DOMAIN/api/crud/:tablename/:rowID`
+
+
+
+#### Custom query request APIs
+
+##### POST request for custom query
+`YOUR_DOMAIN/api/custom`
+
+Pass your sql query as "query" parameter in request
+
