@@ -64,7 +64,12 @@ After completing setup given above follow these options to run APIs:
 
 #### CRUD (GET, POST/CREATE, PUT/UPDATE, DELETE) request APIs
 
-```
+
+Request Type  | Request URL       | Purpose
+------------- | -------------     | -----------
+Content Cell  | Content Cell      | testing
+Content Cell  | Content Cell      | testing
+
 ##### GET request for full table
 `YOUR_DOMAIN/api/crud/:tablename`
 
@@ -85,15 +90,15 @@ Pass all updated parameters with fieldnames and values
 
 ##### DELETE request to remove/delete record via ID
 `YOUR_DOMAIN/api/crud/:tablename/:rowID`
-```
+
 
 
 #### Custom query request APIs
 
-```
+
 ##### POST request for custom query
 `YOUR_DOMAIN/api/custom`
 
 Pass your sql query as "query" parameter in request
-```
+
 
