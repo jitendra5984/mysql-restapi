@@ -57,3 +57,12 @@ var corsOptions = {
 
 module.exports={connection, options, corsOptions};
 ```
+
+### How to use
+
+After completing setup given above follow these options to run APIs:
+
+#### CRUD (GET, POST/CREATE, PUT/UPDATE, DELETE) request APIs
+
+##### GET request for full table
+/api/crud/:tablename
