@@ -46,12 +46,12 @@ var settingOptions = {
 };
 
 var corsOptions = {
-  "origin": "*", // Website you wish to allow to connect
-  "methods": "GET, POST, PUT, DELETE", // Request methods you wish to allow
-  "preflightContinue": false,
-  "optionsSuccessStatus": 200,
-  "allowedHeaders": "Content-Type", // Request headers you wish to allow
-  "credentials": true // Set to true if you need the website to include cookies in the requests sent
+  origin: "*", // Website you wish to allow to connect
+  methods: "GET, POST, PUT, DELETE", // Request methods you wish to allow
+  preflightContinue: false,
+  optionsSuccessStatus: 200,
+  allowedHeaders: "Content-Type", // Request headers you wish to allow
+  credentials: true // Set to true if you need the website to include cookies in the requests sent
 };
 
 
@@ -74,6 +74,12 @@ PUT            | YOUR_DOMAIN/api/crud/:tablename/:rowID | Update record via ID  
 DELETE         | YOUR_DOMAIN/api/crud/:tablename/:rowID | Delete record via Row ID     | - 
 
 
+## APIs to fetch data
+
+Request Method | Request URL                            | Purpose                      | Parameters
+-------------  | -------------------------------------  | ---------------------------  | -------------
+GET            | YOUR_DOMAIN/api/crud/:tablename        | Fetch full table             | - 
+
 
 ## Custom query request APIs
 
@@ -82,5 +88,13 @@ Request Method | Request URL                     | Purpose                      
 -------------  | ------------------------------  | -------------------------------  | -------------
 GET            | YOUR_DOMAIN/api/custom/:query   | Run custom query & get result    | - 
 POST           | YOUR_DOMAIN/api/custom          | Run custom query & get result    | {"query":"SQL_QUERY"} 
+
+
+## Login/check fields Post API
+
+
+Request Method | Request URL                     | Purpose                          | Parameters
+-------------  | ------------------------------  | -------------------------------  | -------------
+POST           | YOUR_DOMAIN/api/check:tablename | Check records availablity status | {"fieldname":"fieldvalue",---} 
 
 

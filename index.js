@@ -51,7 +51,7 @@ module.exports = function(app, dbconfig) {
 
     var checkAPI = require('./lib/check.js')(connection);
 
-    app.post('/' + options.apiURL + '/check', ensureAuthenticated, checkAPI.checkQuery);
+    app.post('/' + options.apiURL + '/check/:table', ensureAuthenticated, checkAPI.checkQuery);
 
     //Export API
     return {

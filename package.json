@@ -1,10 +1,13 @@
 {
   "name": "mysql-restapi",
-  "version": "1.2.1",
+  "version": "1.2.5",
   "description": "Module for gateway between MySql DB & Rest API with features of cors & api generator. Option of login and custom sql query also available",
   "main": "index.js",
   "dependencies": {
     "body-parser": "^1.12.4",
+    "cors": "^2.8.3",
+    "express": "~4.15.2",
+    "mysql": "^2.13.0",
     "multer": "^0.1.8"
   },
   "devDependencies": {},
@@ -40,7 +43,7 @@
     "service"
   ],
   "author": "Jitendra",
-  "license": "MIT",
+  "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/jitendra5984/mysql-restapi/issues"
   },
