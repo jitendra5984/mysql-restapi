@@ -82,7 +82,7 @@ GET            | YOUR_DOMAIN/api/crud/:tablename?_limit=0,100                   
 GET            | YOUR_DOMAIN/api/crud/:tablename?_order[fieldname]=DESC                | Sort order in result            
 GET            | YOUR_DOMAIN/api/crud/:tablename?_fields=fieldname1,fieldname2         | Fetch selected fields            
 GET            | YOUR_DOMAIN/api/crud/:tablename?fieldname[LIKE]=%fieldvalue%          | Like query, varry % position      
-GET | YOUR_DOMAIN/api/crud/:tablename?_limit=0,100&_order[fieldname]=DESC&_fields=fieldname1,fieldname2fieldname[LIKE]=%fieldvalue% | All together      
+GET | YOUR_DOMAIN/api/crud/:tablename?_limit=0,100&_order[fieldname ]=DESC&_fields=fieldname1,fieldname2fieldname[LIKE]=%fieldvalue% | All together      
 
 
 ## Custom query request APIs
