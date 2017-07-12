@@ -80,7 +80,9 @@ Request Method | Request URL                                                    
 -------------  | -------------------------------------                                 | --------------------------- 
 GET            | YOUR_DOMAIN/api/crud/:tablename?_limit=0,100                          | Passing limit in result            
 GET            | YOUR_DOMAIN/api/crud/:tablename?_order[fieldname]=DESC                | Sort order in result            
-GET            | YOUR_DOMAIN/api/crud/:tablename?_order[fieldname]=DESC                | Sort order in result            
+GET            | YOUR_DOMAIN/api/crud/:tablename?_fields=fieldname1,fieldname2         | Fetch selected fields            
+GET            | YOUR_DOMAIN/api/crud/:tablename?fieldname[LIKE]=%fieldvalue%          | Like query, varry % position      
+GET | YOUR_DOMAIN/api/crud/:tablename?_limit=0,100&_order[fieldname]=DESC&_fields=fieldname1,fieldname2fieldname[LIKE]=%fieldvalue% | All together      
 
 
 ## Custom query request APIs
@@ -97,6 +99,6 @@ POST           | YOUR_DOMAIN/api/custom          | Run custom query & get result
 
 Request Method | Request URL                     | Purpose                          | Parameters
 -------------  | ------------------------------  | -------------------------------  | -------------
-POST           | YOUR_DOMAIN/api/check:tablename | Check records availablity status | {"fieldname":"fieldvalue",---} 
+POST           | YOUR_DOMAIN/api/check/:tablename | Check records availablity status | {"fieldname":"fieldvalue",---} 
 
 
