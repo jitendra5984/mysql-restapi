@@ -76,9 +76,11 @@ DELETE         | YOUR_DOMAIN/api/crud/:tablename/:rowID | Delete record via Row 
 
 ## APIs to fetch data
 
-Request Method | Request URL                            | Purpose                      | Parameters
--------------  | -------------------------------------  | ---------------------------  | -------------
-GET            | YOUR_DOMAIN/api/crud/:tablename        | Fetch full table             | - 
+Request Method | Request URL                                                           | Purpose                     
+-------------  | -------------------------------------                                 | --------------------------- 
+GET            | YOUR_DOMAIN/api/crud/:tablename?_limit=0,100                          | Passing limit in result            
+GET            | YOUR_DOMAIN/api/crud/:tablename?_order[fieldname]=DESC                | Sort order in result            
+GET            | YOUR_DOMAIN/api/crud/:tablename?_order[fieldname]=DESC                | Sort order in result            
 
 
 ## Custom query request APIs
