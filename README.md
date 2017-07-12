@@ -32,6 +32,7 @@ var api = mysqlrestapi(app, dbconfig);
 Create file named connections.js on root
 
 ```js
+/* Create database connetion */
 var mysql = require('mysql');
 var connection=mysql.createPool({
     host:'localhost',
@@ -40,11 +41,13 @@ var connection=mysql.createPool({
     database:'DATABASE'
 });
 
+/* Setting parameters for API url customization */
 var settingOptions = {
-    apiURL:'api',
-    paramPrefix:'_'
+    apiURL:'api', // Custom parameter to create API urls
+    paramPrefix:'_' // Parameter for field seperation in API url
 };
 
+/* Setting options to handle cross origin resource sharing issue */
 var corsOptions = {
   origin: "*", // Website you wish to allow to connect
   methods: "GET, POST, PUT, DELETE", // Request methods you wish to allow
@@ -53,7 +56,6 @@ var corsOptions = {
   allowedHeaders: "Content-Type", // Request headers you wish to allow
   credentials: true // Set to true if you need the website to include cookies in the requests sent
 };
-
 
 module.exports={connection, settingOptions, corsOptions};
 ```
